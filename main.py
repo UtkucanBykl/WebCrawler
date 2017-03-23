@@ -7,14 +7,16 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 URL = "http://sahibinden.com"
-search1=["villa","daire","mustakil"]
+search1=["deniz manzarali","konut","villa","daire","mustakil","bekara"]
 search2=["kiralik","satilik"]
 b= mechanize.Browser()
 b.set_handle_refresh(False)
 b.addheaders=[('User-agent', "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36")]
 for i in range(len(search1)):
-    for j in range(len(search2)):        
-        b.open(URL, timeout=2.0)
+    for j in range(len(search2)):
+
+        b.open(URL)
+
         b.select_form(nr=0)
         b.form["query_text"]=str(search1[i])+" "+str(search2[j])
         b.method="GET"
