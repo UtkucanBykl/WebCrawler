@@ -1,11 +1,36 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from flask import Flask
+from flask import request
+from flask import render_template
 import module
-import sys
-reload(sys)
-sys.setdefaultencoding('utf-8')
-kelime=raw_input("Aranan Kelime :")
-URL = "http://www.tdk.gov.tr/index.php?option=com_gts&view=gts"
-b=module.WebCrawlerSearch(URL,"kelime",kelime)
-print (module.CrawleWithId(b,"table","hor-minimalist-a"))
-print (module.FindLinks("http://stackoverflow.com/questions/6289474/working-with-utf-8-encoding-in-python-source"))
+app = Flask(__name__)
+
+
+@app.route("/")
+def index():
+    return "Utkucan Bıyıklı"
+
+@app.route("/findlinks")
+def FindLinks():
+    return render_template("findlink.html")
+
+@app.route("/crawle")
+def Crawle():
+    return render_template("findtag.html")
+
+@app.route('/', methods=['POST'])
+def form_postt():
+    URL=request.form["url"]
+    tag=request.form["tag"]
+    class_=request.form["id"]
+    return str(module.CrawleWithClass(URL,tag,class_))
+
+@app.route('/', methods=['POST'])
+def form_post():
+    URL=request.form["text"]
+    b=str(module.FindLinks(URL))
+    return str(b)
+
+if __name__ == "__main__":
+    app.run(host='127.0.0.1', debug=True, port=12345, use_reloader=True)
