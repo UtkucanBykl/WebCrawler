@@ -8,6 +8,8 @@ Step 2
 Step 3
 <code>pip install mechanize</code><br>
 Step 4
+<code>python base.py</code><br>
+Step 5
 Visit <code>http://127.0.0.1:12345/</code><br>
 If you want Find links in the url <code>http://127.0.0.1:12345/findlinks</code><br>
 or crawle any html tag <code>http://127.0.0.1:12345/crawle</code>
