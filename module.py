@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import re
 import bs4 as bs
 import mechanize
@@ -14,7 +16,8 @@ def FindLinks(URL):
     b.open(URL, timeout=2.0)
     links=[]
     for link in b.links():
-        links.append(link.text)
+
+        links.append(str(link.text)+"-"+str(link.url))
     return links
 
 def WebCrawlerSearch(URL,inputName,search):
@@ -30,10 +33,20 @@ def WebCrawlerSearch(URL,inputName,search):
     response = b.submit()
     return response
 
-def Crawle(response,tag,id):
+def CrawleWithId(response,tag,id):
     find=[]
     soup = bs.BeautifulSoup(response.read(), "lxml")
     for search in soup.find_all(tag, id=re.compile("^"+id+"$")):
+        find.append(search.text)
+    if not find:
+        return "No Match"
+    else:
+        return find
+
+def CrawleWithClass(response,tag,class_):
+    find = []
+    soup = bs.BeautifulSoup(response.read(), "lxml")
+    for search in soup.find_all(tag,class_=class_):
         find.append(search.text)
     if not find:
         return "No Match"

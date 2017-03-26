@@ -25,3 +25,5 @@ for i in range(len(search1)):
         for a in soup.find_all("a",class_="classifiedTitle"):
             with open ("save.txt", 'a') as f:
                 f.write(a.string)
+
+
