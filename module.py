@@ -57,16 +57,14 @@ def CrawleWithId(response,tag,id):
 
 def CrawleWithClass(response,tag,class_):
     find = []
-<<<<<<< HEAD
     try:
         response=urllib2.urlopen(response).read()
         soup = bs.BeautifulSoup(response, "lxml")
     except:
         return "Error"
-=======
+
     response=urllib2.urlopen(response).read()
     soup = bs.BeautifulSoup(response, "lxml")
->>>>>>> 141cadcc69b16ad8e24b77e1e82a9349ffb962d7
     for search in soup.find_all(tag,class_=class_):
         find.append(search.text)
     if not find:
