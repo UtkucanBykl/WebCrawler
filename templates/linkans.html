@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Links{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock %}
+{% block content %}
+<ul class="list-group">
+{% for r in response %}
+      <li class="list-group-item list-group-item-success">{{r}}</li>
+{% endfor %}
+</ul>
+    {% endblock %}

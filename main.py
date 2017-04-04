@@ -19,7 +19,7 @@ def FindLinks():
 def form_post():
     URL=request.form["url"]
     b=module.FindLinks(URL)
-    return str(b)
+    return render_template("linkans.html",response=b);
 
 @app.route("/crawle")
 def Crawle():
@@ -30,7 +30,8 @@ def form_postt():
     URL=request.form["url"]
     tag=request.form["tag"]
     class_=request.form["id"]
-    return str(module.CrawleWithClass(URL,tag,class_))
+    return render_template('findcrawle.html', response=module.CrawleWithClass(URL,tag,class_))
+
 
 
 
