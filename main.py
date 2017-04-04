@@ -15,6 +15,12 @@ def index():
 def FindLinks():
     return render_template("findlink.html")
 
+@app.route('/find', methods=['POST'])
+def form_post():
+    URL=request.form["url"]
+    b=module.FindLinks(URL)
+    return str(b)
+
 @app.route("/crawle")
 def Crawle():
     return render_template("findtag.html")
@@ -26,11 +32,7 @@ def form_postt():
     class_=request.form["id"]
     return str(module.CrawleWithClass(URL,tag,class_))
 
-@app.route('/find', methods=['POST'])
-def form_post():
-    URL=request.form["url"]
-    b=module.FindLinks(URL)
-    return str(b)
+
 
 if __name__ == "__main__":
     app.run(host='127.0.0.1', debug=True, port=12345, use_reloader=True)

@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.min.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 <body>
-    <h1>Enter url</h1>
+
+
+<div class="container">
+    <div class="row">
+            <h1 class="">Enter url,html tag and id</h1>
     <h2>Like http://facebook.com</h2>
-<<<<<<< HEAD
-    <form action="../find" method="POST">
-        <input type="text" name="url">
-=======
-    <form action="." method="POST">
-        <input type="text" name="text">
->>>>>>> 141cadcc69b16ad8e24b77e1e82a9349ffb962d7
-        <input type="submit" name="my-form" value="Send">
-    </form>
+		<form role="form" class="col-md-9 go-right" action="../find" method="post">
+			<h2>Form To Right</h2>
+            <p>To see how it works, you clink in a input field.</p>
+			<div class="form-group">
+			<input id="name" name="url" type="text" class="form-control" required>
+			<label for="name">URL</label>
+		</div>
+
+            <div class="form-group">
+                                <input type="submit" class="btn btn-danger" name="form-crawle" value="Find Link">
+
+            </div>
+		</form>
+
+	</div>
+</div>
 </body>
 </html>

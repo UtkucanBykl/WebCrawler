@@ -63,8 +63,6 @@ def CrawleWithClass(response,tag,class_):
     except:
         return "Error"
 
-    response=urllib2.urlopen(response).read()
-    soup = bs.BeautifulSoup(response, "lxml")
     for search in soup.find_all(tag,class_=class_):
         find.append(search.text)
     if not find:
