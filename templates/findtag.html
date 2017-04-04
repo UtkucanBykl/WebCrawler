@@ -1,13 +1,12 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Find Tag</title>
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.min.css') }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %}Links{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock %}
+{% block content %}
 
 
 <div class="container">
@@ -37,5 +36,4 @@
 
 	</div>
 </div>
-</body>
-</html>
+    {% endblock %}
