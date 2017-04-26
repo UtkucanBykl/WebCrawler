@@ -1,10 +1,12 @@
 import unittest
-import module
+from module import WebCrawler
 
 class Test(unittest.TestCase):
 
 
     def test_crawle(self):
-        a=str(module.CrawleWithClass("www.facebook.com","divdad","grdasdaadient"))
-        self.assertIsNotNone(a)
+        b=WebCrawler("www.utkucanbiyikli.me")
+        self.assertNotEqual(b.FindLinks("www.utkucanbiyikli.me"),"Error")
 
+    def test_in(self):
+        self.assertIn("Hello","Hello")

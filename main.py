@@ -3,7 +3,7 @@
 from flask import Flask
 from flask import request
 from flask import render_template
-import module
+from module import WebCrawler
 app = Flask(__name__)
 
 
@@ -17,8 +17,9 @@ def FindLinks():
 
 @app.route('/find', methods=['POST'])
 def form_post():
+    a=WebCrawler()
     URL=request.form["url"]
-    b=module.FindLinks(URL)
+    b=a.FindLinks(URL)
     return render_template("linkans.html",response=b);
 
 @app.route("/crawle")
@@ -29,11 +30,12 @@ def Crawle():
 def form_postt():
     URL=request.form["url"]
     tag=request.form["tag"]
-    class_=request.form["id"]
-    return render_template('findcrawle.html', response=module.CrawleWithClass(URL,tag,class_))
+    class_=request.form["class"]
+    a=WebCrawler()
+    return render_template('findcrawle.html', response=a.CrawleWithClass(URL,tag,class_))
 
 
 
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1', debug=True, port=12345, use_reloader=True)
+    app.run(host='127.0.0.1', debug=False, port=12345, use_reloader=True)
