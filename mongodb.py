@@ -38,12 +38,17 @@ class MongoDB():
             return False
 
 
-    def UrlList(self):
+    def UrlListCount(self):
 
         myresults = list(self.collection.find().sort("count",pymongo.DESCENDING))[:10]
 
         return myresults
 
+    def UrlListDate(self):
+
+        myresults = list(self.collection.find().sort("date",pymongo.DESCENDING))[:10]
+
+        return myresults
 
     def UrlSearch(self,url):
         result=self.collection.find_one({"url":url})

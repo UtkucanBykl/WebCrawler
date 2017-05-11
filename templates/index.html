@@ -5,6 +5,39 @@
 
 {% endblock %}
 {% block content %}
-<h1>You can crawle any web site.</h1><small>Utkucan Bıyıklı</small>
 
-{% endblock %}
+<h1>Last Search</h1>
+    {% if not response %}
+        <h3>No match</h3>
+    {% else %}
+    <div class="container">
+    <div class="row col-md-6 col-md-offset-2 custyle">
+    <table class="table table-striped custab">
+    <thead>
+        <tr>
+            <th>
+                Url
+            </th>
+            <th>
+                Count
+            </th>
+
+        </tr>
+
+
+    </thead>
+        {% for r in response %}
+
+            <tr>
+                <td><a href="{{r["url"]}}">{{r["url"]}}</a></td>
+                <td>{{r["count"]}}
+                </td>
+            </tr>
+        {% endfor %}
+
+    </table>
+    </div>
+</div>
+{% endif %}
+
+    {% endblock %}

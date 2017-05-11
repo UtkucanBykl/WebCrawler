@@ -11,8 +11,8 @@ Mongo=MongoDB()
 
 @app.route("/")
 def index():
-    response=Mongo.UrlList()
-    return render_template("howmany.html",response=response)
+    response=Mongo.UrlListDate()
+    return render_template("index.html",response=response)
 
 @app.route("/findlinks")
 def FindLinks():
@@ -39,7 +39,7 @@ def form_postt():
 
 @app.route('/howmany')
 def HowMany():
-    response=Mongo.UrlList()
+    response=Mongo.UrlListCount()
     return render_template("howmany.html",response=response)
 
 
