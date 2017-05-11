@@ -1,27 +1,37 @@
 {% extends "base.html" %}
-{% block title %}Links{% endblock %}
+{% block title %}Crawle{% endblock %}
 {% block head %}
   {{ super() }}
-  <style type="text/css">
-    .important { color: #336699; }
-  </style>
+
 {% endblock %}
 {% block content %}
-    {% if response == False %}
+
+<h1>Last Search</h1>
+    {% if not response %}
         <h3>No match</h3>
     {% else %}
-<div class="container">
+    <div class="container">
     <div class="row col-md-6 col-md-offset-2 custyle">
     <table class="table table-striped custab">
     <thead>
         <tr>
-            <a href="{{url}}">{{url}}</a>
+            <th>
+                Url
+            </th>
+            <th>
+                Count
+            </th>
+
         </tr>
+
+
     </thead>
         {% for r in response %}
 
             <tr>
-                <td>{{r}}</td>
+                <td><a href="{{r["url"]}}">{{r["url"]}}</a></td>
+                <td>{{r["count"]}}
+                </td>
             </tr>
         {% endfor %}
 
@@ -29,4 +39,5 @@
     </div>
 </div>
 {% endif %}
+
     {% endblock %}

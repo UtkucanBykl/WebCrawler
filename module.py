@@ -25,11 +25,11 @@ class WebCrawler():
             return e
         links=[]
         for link in self.b.links():
-
-            links.append(str(link.text)+"-"+str(link.url))
+            if(link.text != ""):
+                links.append(str(link.text)+"-"+str(link.url))
 
         if not links:
-            return "No found link"
+            return False
         else:
             return links
 
@@ -50,9 +50,10 @@ class WebCrawler():
         response=urllib2.urlopen(response).read()
         soup = bs.BeautifulSoup(response, "lxml")
         for search in soup.find_all(tag, id=re.compile("^"+id+"$")):
-            find.append(search.text)
+            if(search.text !=""):
+                find.append(search.text)
         if not find:
-            return "No Match"
+            return False
         else:
             return find
 
@@ -65,8 +66,9 @@ class WebCrawler():
             return e
 
         for search in soup.find_all(tag,class_=class_):
-            find.append(search.text)
+            if(search.text !=""):
+                find.append(search.text)
         if not find:
-            return "No Match"
+            return False
         else:
             return find

@@ -4,12 +4,15 @@ from flask import Flask
 from flask import request
 from flask import render_template
 from module import WebCrawler
+from mongodb import MongoDB
 app = Flask(__name__)
-
+WebCrawler = WebCrawler()
+Mongo=MongoDB()
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    response=Mongo.UrlList()
+    return render_template("howmany.html",response=response)
 
 @app.route("/findlinks")
 def FindLinks():
@@ -17,10 +20,10 @@ def FindLinks():
 
 @app.route('/find', methods=['POST'])
 def form_post():
-    a=WebCrawler()
     URL=request.form["url"]
-    b=a.FindLinks(URL)
-    return render_template("linkans.html",response=b);
+    Mongo.UrlSearch(URL)
+    b=WebCrawler.FindLinks(URL)
+    return render_template("linkans.html",response=b,url=URL);
 
 @app.route("/crawle")
 def Crawle():
@@ -31,9 +34,13 @@ def form_postt():
     URL=request.form["url"]
     tag=request.form["tag"]
     class_=request.form["class"]
-    a=WebCrawler()
-    return render_template('findcrawle.html', response=a.CrawleWithClass(URL,tag,class_))
+    Mongo.UrlSearch(URL)
+    return render_template('findcrawle.html', response=WebCrawler.CrawleWithClass(URL,tag,class_),tag=tag,class_=class_)
 
+@app.route('/howmany')
+def HowMany():
+    response=Mongo.UrlList()
+    return render_template("howmany.html",response=response)
 
 
 

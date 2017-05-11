@@ -5,9 +5,31 @@
 
 {% endblock %}
 {% block content %}
-<ul class="list-group" style="margin:5%;">
-{% for r in response %}
-      <li class="list-group-item list-group-item-success">{{r}}</li>
-{% endfor %}
-</ul>
+    {% if response == False %}
+        <h3>No match</h3>
+    {% else %}
+<div class="container">
+    <div class="row col-md-6 col-md-offset-2 custyle">
+    <table class="table table-striped custab">
+    <thead>
+        <tr>
+            {% if tag %}
+            <a href="{{url}}">{{url}}</a>-{{tag}}
+            {% else %}
+            {{url}}-Empty Tag
+            {% endif %}
+        </tr>
+    </thead>
+        {% for r in response %}
+
+            <tr>
+                <td>{{r}}</td>
+            </tr>
+        {% endfor %}
+
+    </table>
+    </div>
+</div>
+{% endif %}
+
     {% endblock %}
