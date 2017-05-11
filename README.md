@@ -16,8 +16,6 @@ $ mongod
 ``` sh
 $ python main.py
 $ cd WebCrawler
-$ pip install -r requirements.txt
-$ python main.py
 ``` 
 And visit the http://127.0.0.1:12345/
 
