@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9384997d-6bf0-4cb1-a05d-6d0766f19a62" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FormSearch.py" afterPath="$PROJECT_DIR$/FormSearch.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module.py" afterPath="$PROJECT_DIR$/module.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/findlink.html" afterPath="$PROJECT_DIR$/templates/findlink.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/findtag.html" afterPath="$PROJECT_DIR$/templates/findtag.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/findcrawle.html" afterPath="$PROJECT_DIR$/templates/findcrawle.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,8 +26,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="22" column="54" lean-forward="true" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+            <state relative-caret-position="120">
+              <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
               <folding>
                 <element signature="e#46#69#0" expanded="true" />
               </folding>
@@ -38,8 +38,8 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+            <state relative-caret-position="150">
+              <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -47,12 +47,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="59" lean-forward="false" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="findcrawle.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/findcrawle.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="18" />
-              <folding />
+            <state relative-caret-position="97">
+              <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="18" />
+              <folding>
+                <element signature="n#style#0;n#ul#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,8 +72,8 @@
       <file leaf-file-name="linkans.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/linkans.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -70,8 +82,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+            <state relative-caret-position="270">
+              <caret line="18" column="53" lean-forward="false" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -82,8 +94,8 @@
       <file leaf-file-name="module.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+            <state relative-caret-position="1065">
+              <caret line="71" column="23" lean-forward="true" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
               <folding>
                 <element signature="e#46#55#0" expanded="true" />
               </folding>
@@ -91,11 +103,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="db.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="FormSearch.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FormSearch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="91" lean-forward="false" selection-start-line="10" selection-start-column="91" selection-end-line="10" selection-end-column="91" />
+            <state relative-caret-position="15">
+              <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -106,18 +128,8 @@
       <file leaf-file-name="findtag.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/findtag.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/form.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1185">
-              <caret line="79" column="1" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
+            <state relative-caret-position="360">
+              <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -155,14 +167,16 @@
         <option value="$PROJECT_DIR$/SaveTable.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/templates/linkans.html" />
-        <option value="$PROJECT_DIR$/templates/findcrawle.html" />
         <option value="$PROJECT_DIR$/static/css/form.css" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/findlink.html" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/FormSearch.py" />
         <option value="$PROJECT_DIR$/templates/findtag.html" />
+        <option value="$PROJECT_DIR$/templates/findcrawle.html" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/db.py" />
+        <option value="$PROJECT_DIR$/FormSearch.py" />
         <option value="$PROJECT_DIR$/module.py" />
       </list>
     </option>
@@ -188,6 +202,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -231,7 +246,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -246,7 +260,7 @@
       <recent name="$PROJECT_DIR$/templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.FormSearch">
     <configuration default="false" name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -260,23 +274,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="WebCrawler" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Index" type="PythonConfigurationType" factoryName="Python" singleton="true" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="WebCrawler" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SaveTable.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -338,6 +335,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="WebCrawler" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FormSearch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="db" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="WebCrawler" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -481,18 +495,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.main" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Index" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest Test.test_link" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in Test" />
-      <item index="4" class="java.lang.String" itemvalue="Python.FormSearch" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest Test.test_link" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in Test" />
+      <item index="3" class="java.lang.String" itemvalue="Python.FormSearch" />
+      <item index="4" class="java.lang.String" itemvalue="Python.db" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.main" />
-        <item index="1" class="java.lang.String" itemvalue="Python.FormSearch" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in Test" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest Test.test_link" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Index" />
+        <item index="0" class="java.lang.String" itemvalue="Python.FormSearch" />
+        <item index="1" class="java.lang.String" itemvalue="Python.db" />
+        <item index="2" class="java.lang.String" itemvalue="Python.main" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in Test" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest Test.test_link" />
       </list>
     </recent_temporary>
   </component>
@@ -557,22 +571,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="17" width="1346" height="692" extended-state="1" />
+    <frame x="20" y="17" width="1346" height="692" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851985" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6696751" sideWeight="0.5030441" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851985" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851985" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6696751" sideWeight="0.49695587" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851985" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32129964" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24961948" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6696751" sideWeight="0.5030441" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851985" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851985" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6696751" sideWeight="0.49695587" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851985" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32129964" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24961948" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851985" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851985" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -581,28 +595,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851985" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6696751" sideWeight="0.5030441" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851985" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851985" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6696751" sideWeight="0.49695587" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851985" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32129964" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24961948" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851985" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -614,21 +606,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/findlink.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/findtag.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -867,19 +844,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/linkans.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/form.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1185">
           <caret line="79" column="1" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -891,66 +859,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FormSearch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="91" lean-forward="false" selection-start-line="10" selection-start-column="91" selection-end-line="10" selection-end-column="91" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/findtag.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/findcrawle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="18" />
+        <state relative-caret-position="360">
+          <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="22" column="54" lean-forward="true" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+        <state relative-caret-position="120">
+          <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
           <folding>
             <element signature="e#46#69#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="53" lean-forward="false" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/linkans.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="59" lean-forward="false" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FormSearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/findcrawle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/module.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        <state relative-caret-position="1065">
+          <caret line="71" column="23" lean-forward="true" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
           <folding>
             <element signature="e#46#55#0" expanded="true" />
           </folding>
