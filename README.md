@@ -10,7 +10,7 @@ And after check for the mongodb status
 if it is : True
 else:
 ``` sh
-$ mongod
+$ sudo service mongod start
 ```
 
 ``` sh
