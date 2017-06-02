@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from flask import Flask
-from flask import request
-from flask import render_template
+from flask import Flask, request, render_template
 from module import WebCrawler
 from mongodb import MongoDB
 app = Flask(__name__)
