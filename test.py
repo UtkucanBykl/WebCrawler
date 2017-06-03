@@ -10,3 +10,5 @@ class Test(unittest.TestCase):
 
     def test_in(self):
         self.assertIn("Hello","Hello")
+    def test_out(self):
+	self.assertIn("adasdas","asdas")
